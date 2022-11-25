@@ -1,0 +1,300 @@
+@import "../breakpoints/breakpoints.scss";
+
+.project-page{
+    border-radius: 0;
+    position: relative;
+    color: #000000;
+    top: 170px; 
+    left: 100px; 
+    @include media("<=tablet"){
+        left: 5px;
+    }
+    
+}
+
+.project-title{
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #b675d7;
+    position: relative;
+    display: block;
+    margin-bottom: 0;
+    animation: fadeIn 0.5s 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-family: sans-serif;
+
+    @include media("<=tablet"){
+        font-size: 20px;
+    }
+}
+
+.py-4{
+    position: relative;
+    display: block;
+    padding: 0;
+    top: 0px;
+    margin: 0;
+    right: 0;
+
+    @include media("<=tablet"){
+        width: 350px;
+    }
+    
+}
+
+.nav-pills .nav-item:not(:nth-last-child(1)) .nav-link{
+    border-radius: 1px solid rgb(0, 0, 0);
+    
+
+}
+
+
+.tab-content{
+    background-color: #000000;
+    border: 3px soild #54047C;
+    height: 380px;
+
+    @include media("<=tablet"){
+        width: 400px;
+    }
+    
+}
+
+.nav-item{
+    font-size: 17px;
+    background: #000000;
+    border: 2px solid #54047C; 
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #54047C;
+
+    @include media("<=tablet"){
+        position: flex;
+        font-size: 8px;
+        width: 200px;
+        float: left;
+    }
+    
+}
+
+.nav-pills .nav-link{
+    font-size: 17px;
+    background: #000000;
+    letter-spacing: 1.5px;
+    color: #b675d7;
+    @include media("<=tablet"){
+        font-size: 8px;
+    }
+
+}
+
+.nav-pills .nav-link.active{
+    font-size: 17px;
+    background: #54047C;
+    
+    color: #FFFFFF;
+
+    @include media("<=tablet"){
+        font-size: 8px;
+    }
+
+}
+
+.project-content,
+.project2-content{
+    h2{
+        font-size: 35px;
+        color: #ffffff;
+        position: relative;
+        font-weight: 600;
+        font-family: garamond;
+        letter-spacing: 1px;
+        left: -80px;
+
+        @include media("<=tablet"){
+            font-size: 14px;
+            right: 0px;
+            width: 250px;
+        }
+    }
+
+    h3{
+        font-size: 28px;
+        color: #54047C;
+        position: relative;
+        font-weight: 600;
+        font-family: garamond;
+        left: -80px;
+
+        @include media("<=tablet"){
+            font-size: 10px;
+            right: 0px;
+            width: 250px;
+        }
+    }
+
+    p{
+        font-size: 18px;
+        width: 450px;
+        line-height: 20px;
+        margin-top: 0;
+        padding: 0;
+        color: #FFFFFF;
+        font-family: 'Courier New', Courier, monospace;
+        @include media("<=tablet"){
+            font-size: 8px;
+            right: 0px;
+            position: relative;
+            width: 250px;
+        }
+    }
+
+    li{
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 0;
+        padding: 0;
+        color: #FFFFFF;
+        font-family: 'Courier New', Courier, monospace;
+        @include media("<=tablet"){
+            font-size: 10px;
+            left: 10px;
+            width: 250px;
+        }
+    }
+}
+
+.project-content{
+    background: rgb(0, 0, 0);
+    position: relative;
+    height: 370px;
+    padding: 10px;
+    margin: 8px 0px;
+    width: 700px;
+
+}
+
+.project-model{
+    background: #000000;
+    float: right;
+    position: relative;
+    top: -385px;
+    height: 370px;
+    padding: 10px;
+    margin: 8px 0px;
+    width: 400px;
+    border-left: 1px solid #54047C;
+    margin: 8px 0px;
+
+    @include media("<=tablet"){
+        top: 0px;
+        width: 200px;
+    }
+}
+
+
+.git-flat-button{
+    position: relative;
+    left: 38%;
+    bottom: 0px;
+    text-decoration: none;
+    padding: 7px 11px;
+    border: 2px solid #54047C;
+    background-color: transparent;
+    float: left;
+
+    @include media("<=tablet"){
+        bottom: 50px;
+        left: 150px;
+        width: 120px;
+    }
+
+    a{
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-family: sans-serif; 
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: #b675d7;
+
+        @include media("<=tablet"){
+            font-size: 8px;
+        }
+
+        .icon{
+            height: 20px;
+            width: 20px;
+            color: #b675d7;
+
+            @include media("<=tablet"){
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+
+    &:hover{
+        color: #1b2b8d;
+        border: 2px solid #1b2b8d;
+        opacity: 0.6;
+        
+        a{
+            color: #43bdea;
+
+            .icon{
+                color: #43bdea;
+            }
+        }
+    }
+}
+
+.project2-content{
+
+    background: #000000;
+    float: right;
+    position: relative;
+    top: 0px;
+    height: 370px;
+    padding: 10px;
+    margin: 8px 0px;
+    width: 700px;
+    border: none;
+    margin: 8px 0px;
+
+    @include media("<=tablet"){
+        bottom: 0;
+        width: 0;
+        left: -330px;
+    }
+ 
+}
+
+.project2-model{
+    background: rgb(0, 0, 0);
+    position: relative;
+    height: 370px;
+    padding: 10px;
+    margin: 8px 0px;
+    width: 400px;
+    left: -60px;
+    border-right: 1px solid #54047C;
+
+    @include media("<=tablet"){
+        bottom: 0;
+        width: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

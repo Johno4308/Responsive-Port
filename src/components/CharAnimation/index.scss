@@ -1,0 +1,28 @@
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+  }
+  
+  .text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+    //hover over letter swing effect
+    &:hover {
+      animation: swing 5s;
+      color: #54047C;
+      -webkit-text-stroke: 2px #54047C;
+    }
+  }
+  
+  //for loop through and animate each array element with an extended delay the further down the array the element is
+  @for $i from 1 through 53 {
+    .text-animate._#{$i} {
+      animation-delay: #{calc($i / 15)}s;
+    }
+  }
