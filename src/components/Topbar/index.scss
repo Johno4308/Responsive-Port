@@ -94,7 +94,6 @@
         @include media("<=tablet"){
             left: 50%;
             padding: 0;
-            margin-left: 0;
         }
 
         li{
@@ -107,7 +106,9 @@
 
                 @include media("<=tablet"){
                     font-size: 20px;
-
+                    margin: 0;
+                    padding: 10px;
+                    left: 100px;
                 }
 
                 &:hover svg{

@@ -189,6 +189,7 @@
     margin: 8px 0px;
 
     @include media("<=tablet"){
+        content: none;
         top: 0px;
         width: 200px;
     }
@@ -206,7 +207,7 @@
     float: left;
 
     @include media("<=tablet"){
-        bottom: 50px;
+        bottom: 3200px;
         left: 150px;
         width: 120px;
     }
@@ -283,6 +284,7 @@
     border-right: 1px solid #54047C;
 
     @include media("<=tablet"){
+        content: none;
         bottom: 0;
         width: 0;
     }
