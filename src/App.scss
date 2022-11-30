@@ -1,38 +1,38 @@
-$primary-color: #54047C;
+$primary-color: #54047c;
 @import 'animate.css';
 @import './node_modules/loaders.css/src/animations/ball-rotate.scss';
-@import "./components/breakpoints/breakpoints.scss";
+@import './components/breakpoints/breakpoints.scss';
 
-@font-face{
-    font-family: 'Crafty-Notes';
-    src: url('./assets/fonts/CraftyNotesRegular-9YW77.ttf') format('ttf')
+@font-face {
+  font-family: 'Crafty-Notes';
+  src: url('./assets/fonts/CraftyNotesRegular-9YW77.ttf') format('ttf');
 }
 
-@font-face{
-    font-family: 'Sparky Stones';
-    src: url('./assets/fonts/SparkyStonesRegular-BW6ld.ttf') format('ttf')
+@font-face {
+  font-family: 'Sparky Stones';
+  src: url('./assets/fonts/SparkyStonesRegular-BW6ld.ttf') format('ttf');
 }
 
 input,
-textarea{
-    font-family: 'Sparky Stones';
+textarea {
+  font-family: 'Sparky Stones';
 }
 
 //styling of loader between pages
-.loader-active{
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-    animation: fadeOut 1s 1s;
-    animation-fill-mode: forwards;
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 
-    @include media("<=tablet"){
-        left: 80px;
-    }
+  @include media('<=tablet') {
+    left: 80px;
+  }
 }

@@ -4,10 +4,10 @@ import App from './App'
 import './index.scss'
 import { BrowserRouter } from 'react-router-dom'
 
-
+//use of react router dom
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter> //use of react router dom
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
